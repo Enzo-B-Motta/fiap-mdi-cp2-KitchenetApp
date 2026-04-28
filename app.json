@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "fiap-mdi-cp1-KitchenetApp",
-    "slug": "fiap-mdi-cp1-KitchenetApp",
+    "name": "fiap-mdi-cp2-KitchenetApp",
+    "slug": "fiap-mdi-cp2-KitchenetApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,6 +24,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
