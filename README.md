@@ -29,11 +29,6 @@ As funcionalidades implementadas no aplicativo são:
 - Campos para **Usuário** e **Senha**
 - **Botão de acesso** que direciona o usuário para a tela de fila de espera
 
-<img width="293" height="653" alt="image" src="https://github.com/user-attachments/assets/3e1af2a1-991c-4732-8b09-af79d3780e14" />
-
-
-<img width="295" height="649" alt="image" src="https://github.com/user-attachments/assets/db856512-4103-44c4-a0a3-79ed2ffd9481" />
-
 
 ---
 
@@ -48,7 +43,6 @@ Funcionalidades da tela:
 - **Botão para acessar o cardápio**
 - Estrutura de **fila virtual de pedidos** (simulação)
 
-<img width="295" height="650" alt="image" src="https://github.com/user-attachments/assets/9e30b917-51ea-44c6-a7d9-f260caae557f" />
 
 
 ---
@@ -63,7 +57,6 @@ Funcionalidades da tela:
 - Exibição do **preço dos produtos**
 - **Botão para voltar para a fila de espera**
 
-<img width="285" height="652" alt="image" src="https://github.com/user-attachments/assets/88dc5d1b-c624-4190-b912-2439d0bdf0d3" />
 
 ---
 
@@ -184,7 +177,8 @@ Funcionalidades da tela:
 - Verificação de correspondência entre senha e confirmação
 - Armazenamento dos dados no AsyncStorage
 
-*[PRINT Tela de Cadastro preenchida com validação]*
+
+<img width="295" height="649" alt="image" src="https://github.com/user-attachments/assets/db856512-4103-44c4-a0a3-79ed2ffd9481" />
 
 ---
 
@@ -200,7 +194,7 @@ Funcionalidades da tela:
 - Verificação das credenciais com dados armazenados
 - Redirecionamento para a aplicação após login bem-sucedido
 
-*[PRINT Tela de Login]*
+<img width="293" height="653" alt="image" src="https://github.com/user-attachments/assets/3e1af2a1-991c-4732-8b09-af79d3780e14" />
 
 ---
 
@@ -211,7 +205,8 @@ Funcionalidades da tela:
 - Implementação de funcionalidade de logout
 - Ao realizar logout, o usuário é redirecionado para a tela de login
 
-*[PRINT Fluxo de login e logout]*
+<img width="295" height="650" alt="image" src="https://github.com/user-attachments/assets/9e30b917-51ea-44c6-a7d9-f260caae557f" />
+
 
 ---
 
@@ -225,7 +220,8 @@ Funcionalidades implementadas:
 - Recuperação dos dados ao iniciar o aplicativo (useEffect)
 - Atualização dos dados em operações de inserção e alteração
 
-*[PRIN Código de uso do AsyncStorage]*
+<img width="781" height="609" alt="image" src="https://github.com/user-attachments/assets/4ef127d7-88fb-414c-adb3-ab5c44e9f5cc" />
+
 
 ---
 
@@ -295,23 +291,6 @@ Ajustes realizados:
 
 ---
 
-## Diferencial Implementado
-
-### Modo Escuro / Modo Claro
-
-Foi implementado suporte a alternância entre tema claro e escuro.
-
-Características:
-
-- Alternância manual pelo usuário
-- Controle de tema via Context API
-- Aplicação dinâmica de estilos conforme o tema selecionado
-
-*[PRINT Código]*  
-*[PRINT a interface nos dois temas]*
-
----
-
 ## Estrutura do Projeto (Atualizada)
 
 O projeto foi reorganizado para melhor separação de responsabilidades:
@@ -364,13 +343,3 @@ Fluxo apresentado:
 Cadastro → Login → Uso do aplicativo → Logout
 
 ---
-
-## Atualização dos Próximos Passos
-
-Com base na evolução atual, o projeto pode ser expandido com:
-
-- Integração com backend real
-- Sistema de pedidos completo
-- Histórico de pedidos
-- Notificações em tempo real
-- Melhorias adicionais na interface
