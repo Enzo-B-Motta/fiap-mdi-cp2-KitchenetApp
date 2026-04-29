@@ -3,6 +3,7 @@
     "name": "fiap-mdi-cp2-KitchenetApp",
     "slug": "fiap-mdi-cp2-KitchenetApp",
     "version": "1.0.0",
+    "scheme": "fiap-mdi-cp2-KitchenetApp",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

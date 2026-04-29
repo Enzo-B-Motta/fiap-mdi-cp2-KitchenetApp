@@ -8,6 +8,11 @@ export default function Fila() {
   const [meuPedido, setMeuPedido] = useState(null);
   const [fila, setFila] = useState(['#102', '#103', '#104']); 
 
+  function handleLogout() {
+    logout();
+    router.replace('/index');
+  }
+
   const gerarPedido = () => {
     if (meuPedido) return; // impede gerar outro pedido
 
@@ -20,6 +25,9 @@ export default function Fila() {
 
   return (
     <View style={styles.container}>
+      <TouchableOpacity style={styles.buttonContainer} onPress={handleLogout}>
+        <Text>Encerrar Sessão</Text>
+      </TouchableOpacity>
   
       <Text style={styles.title}>Fila Virtual</Text>
 
@@ -52,7 +60,7 @@ export default function Fila() {
 
         <TouchableOpacity 
           style={styles.buttonSecondary} 
-          onPress={() => router.push('/Cardapio')}
+          onPress={() => router.push('/cardapio')}
         >
           <Text style={styles.buttonTextSecondary}>Ver Cardápio</Text>
         </TouchableOpacity>
