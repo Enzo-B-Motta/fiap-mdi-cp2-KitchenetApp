@@ -29,7 +29,9 @@ As funcionalidades implementadas no aplicativo são:
 - Campos para **Usuário** e **Senha**
 - **Botão de acesso** que direciona o usuário para a tela de fila de espera
 
-<img width="281" height="599" alt="image" src="https://github.com/user-attachments/assets/26bd790f-b156-4a03-9d2b-cc106a1f2a60" />
+<img width="293" height="653" alt="image" src="https://github.com/user-attachments/assets/3e1af2a1-991c-4732-8b09-af79d3780e14" />
+
+<img width="295" height="649" alt="image" src="https://github.com/user-attachments/assets/db856512-4103-44c4-a0a3-79ed2ffd9481" />
 
 
 ---
