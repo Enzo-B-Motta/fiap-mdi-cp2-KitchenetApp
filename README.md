@@ -161,14 +161,213 @@ A estilização foi feita com o **StyleSheet** do React Native, tendo:
 - Separação entre lógica e aparência
 - Interface simples e funcional
 
-### Próximos Passos
+---
 
-Com mais tempo, o grupo pretende evoluir o aplicativo com:
+## Funcionalidades Implementadas
 
-- Implementação completa da tela de fila de pedidos
-- Criação da tela de cardápio funcional
-- Integração entre pedidos e fila
-- Melhoria da interface visual
-- Adição de feedbacks ao usuário (mensagens e estados de carregamento)
+### Tela de Cadastro (cadastro.jsx)
 
-Com essas melhorias o aplicativo seria aperfeiçoado, estando mais completo e mais próximo de um cenário real no mercado
+Tela responsável pelo registro de novos usuários no aplicativo.
+
+Funcionalidades da tela:
+
+- Campo para **Nome completo**
+- Campo para **E-mail**
+- Campo para **Senha**
+- Campo para **Confirmação de senha**
+- Validação de campos obrigatórios
+- Validação de formato de e-mail
+- Validação de senha mínima (6 caracteres)
+- Verificação de correspondência entre senha e confirmação
+- Armazenamento dos dados no AsyncStorage
+
+*[PRINT Tela de Cadastro preenchida com validação]*
+
+---
+
+### Tela de Login (login.jsx)
+
+Tela utilizada para autenticação do usuário.
+
+Funcionalidades da tela:
+
+- Campo para **E-mail**
+- Campo para **Senha**
+- Validação de campos obrigatórios
+- Verificação das credenciais com dados armazenados
+- Redirecionamento para a aplicação após login bem-sucedido
+
+*[PRINT Tela de Login]*
+
+---
+
+### Persistência de Sessão
+
+- O estado de login do usuário é mantido mesmo após o fechamento do aplicativo
+- Os dados são armazenados no AsyncStorage
+- Implementação de funcionalidade de logout
+- Ao realizar logout, o usuário é redirecionado para a tela de login
+
+*[PRINT Fluxo de login e logout]*
+
+---
+
+### Persistência de Dados do Aplicativo
+
+Além dos dados de autenticação, os dados funcionais do aplicativo também passaram a ser persistidos.
+
+Funcionalidades implementadas:
+
+- Armazenamento de dados no AsyncStorage
+- Recuperação dos dados ao iniciar o aplicativo (useEffect)
+- Atualização dos dados em operações de inserção e alteração
+
+*[PRIN Código de uso do AsyncStorage]*
+
+---
+
+### Gerenciamento de Estado Global (Context API)
+
+Foram criados contextos para centralizar o gerenciamento de estado da aplicação.
+
+#### AuthContext
+
+Responsável por:
+
+- Armazenar o usuário autenticado
+- Função de login
+- Função de logout
+
+#### AppDataContext
+
+Responsável por:
+
+- Gerenciamento dos dados do aplicativo (fila, pedidos, etc.)
+
+*[PRINT Código dos Contexts]*
+
+---
+
+### Proteção de Navegação
+
+- Acesso às telas principais é restrito a usuários autenticados
+- Usuários não autenticados são redirecionados para a tela de login
+- Controle de navegação baseado no estado global
+
+*[PRINT Implementação de proteção de rotas]*
+
+---
+
+### Validação de Formulários
+
+Todos os formulários passaram a possuir validações implementadas diretamente nos campos.
+
+Validações aplicadas:
+
+- Campos obrigatórios não podem ser enviados vazios
+- Validação de formato de e-mail
+- Senha com mínimo de 6 caracteres
+- Confirmação de senha obrigatoriamente igual à senha
+- Exibição de mensagens de erro abaixo dos campos
+- Bloqueio do envio enquanto houver erros
+
+*[PRINT Exemplo do erro em formulário]*
+
+---
+
+### Melhorias de Interface (UI/UX)
+
+Foram realizadas melhorias visuais em todas as telas existentes.
+
+Ajustes realizados:
+
+- Padronização de espaçamento (padding e margin)
+- Organização visual dos elementos
+- Aplicação de cores para feedback (erro e sucesso)
+- Inclusão de indicadores de carregamento (ActivityIndicator)
+- Implementação de estado de lista vazia
+- Ajustes para evitar sobreposição do teclado nos formulários
+
+*[PRINT Tela com layout atuializado]*
+
+---
+
+## Diferencial Implementado
+
+### Modo Escuro / Modo Claro
+
+Foi implementado suporte a alternância entre tema claro e escuro.
+
+Características:
+
+- Alternância manual pelo usuário
+- Controle de tema via Context API
+- Aplicação dinâmica de estilos conforme o tema selecionado
+
+*[PRINT Código]*  
+*[PRINT a interface nos dois temas]*
+
+---
+
+## Estrutura do Projeto (Atualizada)
+
+O projeto foi reorganizado para melhor separação de responsabilidades:
+
+### Estrutura de pastas
+
+    meu-app/
+    ├── app/
+    │   ├── (auth)/
+    │   │   ├── login.jsx
+    │   │   └── cadastro.jsx
+    │   ├── (tabs)/
+    │   │   ├── index.jsx
+    │   │   └── ...
+    │   └── _layout.jsx
+    ├── components/
+    ├── context/
+    │   ├── AuthContext.jsx
+    │   └── AppDataContext.jsx
+    ├── hooks/
+    ├── constants/
+    └── assets/
+
+---
+
+## Decisões Técnicas (Checkpoint 2)
+
+- Utilização de **AsyncStorage** para persistência de dados locais
+- Implementação de autenticação baseada em dados armazenados localmente
+- Uso da **Context API** para gerenciamento de estado global
+- Separação de rotas autenticadas e não autenticadas
+- Validação de formulários diretamente nos componentes
+
+---
+
+## Demonstração Visual
+
+Add as prints:
+
+- Tela de Login  
+- Tela de Cadastro  
+- Tela de Fila  
+- Tela de Cardápio  
+- Tela principal do aplicativo  
+
+
+
+Fluxo apresentado:
+
+Cadastro → Login → Uso do aplicativo → Logout
+
+---
+
+## Atualização dos Próximos Passos
+
+Com base na evolução atual, o projeto pode ser expandido com:
+
+- Integração com backend real
+- Sistema de pedidos completo
+- Histórico de pedidos
+- Notificações em tempo real
+- Melhorias adicionais na interface
