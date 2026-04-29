@@ -244,6 +244,8 @@ Responsável por:
 - Gerenciamento dos dados do aplicativo (fila, pedidos, etc.)
 
 <img width="748" height="584" alt="image" src="https://github.com/user-attachments/assets/72b73fb5-e08c-4d10-aad4-db0477b92c8f" />
+
+
 <img width="763" height="399" alt="image" src="https://github.com/user-attachments/assets/c5c47a33-9387-4087-97e8-972654387efd" />
 
 
@@ -255,8 +257,6 @@ Responsável por:
 - Acesso às telas principais é restrito a usuários autenticados
 - Usuários não autenticados são redirecionados para a tela de login
 - Controle de navegação baseado no estado global
-
-*[PRINT Implementação de proteção de rotas]*
 
 ---
 
@@ -273,8 +273,6 @@ Validações aplicadas:
 - Exibição de mensagens de erro abaixo dos campos
 - Bloqueio do envio enquanto houver erros
 
-*[PRINT Exemplo do erro em formulário]*
-
 ---
 
 ### Melhorias de Interface (UI/UX)
@@ -289,8 +287,6 @@ Ajustes realizados:
 - Inclusão de indicadores de carregamento (ActivityIndicator)
 - Implementação de estado de lista vazia
 - Ajustes para evitar sobreposição do teclado nos formulários
-
-*[PRINT Tela com layout atuializado]*
 
 ---
 
@@ -326,11 +322,5 @@ O projeto foi reorganizado para melhor separação de responsabilidades:
 - Uso da **Context API** para gerenciamento de estado global
 - Separação de rotas autenticadas e não autenticadas
 - Validação de formulários diretamente nos componentes
-
-
-
-Fluxo apresentado:
-
-Cadastro → Login → Uso do aplicativo → Logout
 
 ---
