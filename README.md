@@ -31,6 +31,7 @@ As funcionalidades implementadas no aplicativo são:
 
 <img width="293" height="653" alt="image" src="https://github.com/user-attachments/assets/3e1af2a1-991c-4732-8b09-af79d3780e14" />
 
+
 <img width="295" height="649" alt="image" src="https://github.com/user-attachments/assets/db856512-4103-44c4-a0a3-79ed2ffd9481" />
 
 
@@ -47,7 +48,7 @@ Funcionalidades da tela:
 - **Botão para acessar o cardápio**
 - Estrutura de **fila virtual de pedidos** (simulação)
 
-<img width="270" height="599" alt="image" src="https://github.com/user-attachments/assets/00b327f0-4def-400d-bd5e-bdc0f806ee74" />
+<img width="295" height="650" alt="image" src="https://github.com/user-attachments/assets/9e30b917-51ea-44c6-a7d9-f260caae557f" />
 
 
 ---
@@ -62,7 +63,7 @@ Funcionalidades da tela:
 - Exibição do **preço dos produtos**
 - **Botão para voltar para a fila de espera**
 
-<img width="275" height="598" alt="image" src="https://github.com/user-attachments/assets/a7061d06-5c28-46e3-9103-5baed1565988" />
+<img width="285" height="652" alt="image" src="https://github.com/user-attachments/assets/88dc5d1b-c624-4190-b912-2439d0bdf0d3" />
 
 ---
 
