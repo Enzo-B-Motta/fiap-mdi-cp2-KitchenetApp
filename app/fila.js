@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, FlatList } from 'react-native';
 import { useRouter } from 'expo-router';
+import { useAuth } from '../context/AuthContext';
 
 export default function Fila() {
 
   const router = useRouter();
+  const { logout } = useAuth()
   const [meuPedido, setMeuPedido] = useState(null);
   const [fila, setFila] = useState(['#102', '#103', '#104']); 
 
   function handleLogout() {
     logout();
-    router.replace('/index');
+    router.replace('/');
   }
 
   const gerarPedido = () => {
@@ -25,10 +27,6 @@ export default function Fila() {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.buttonContainer} onPress={handleLogout}>
-        <Text>Encerrar Sessão</Text>
-      </TouchableOpacity>
-  
       <Text style={styles.title}>Fila Virtual</Text>
 
       <View style={styles.cardDestaque}>
@@ -79,6 +77,9 @@ export default function Fila() {
             </View>
           )}
         />
+        <TouchableOpacity style={styles.buttonLogout} onPress={handleLogout}>
+        <Text style={styles.buttonTextSecondary}>Encerrar Sessão</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -138,6 +139,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#e6f4fe',
+  },
+  buttonLogout: {
+    backgroundColor: 'transparent',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#D1472C',
   },
   buttonText: {
     color: '#000',

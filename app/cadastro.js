@@ -37,8 +37,8 @@ export default function Cadastro() {
 
 
     await cadastrar(nome.trim(), email.trim(), senha);
-    Alert.alert('Conta criada com sucesso!', [
-    { text: 'Ir para Login', onPress: () => router.replace('/index') },
+    Alert.alert('Sucesso!', 'Conta criada com sucesso!', [
+    { text: 'Ir para Login', onPress: () => router.replace('/') },
     ]);
   }
 
@@ -109,6 +109,6 @@ const styles = StyleSheet.create({
     color: '#555051',
   },
   botao: { backgroundColor: '#ffffff', padding: 14, borderRadius: 8, alignItems: 'center', marginTop: 8 , borderColor:'#555051'},
-  textoBotao: { color: '#fff', fontWeight: 'bold', fontSize: 16 },
+  textoBotao: { color: '#000', fontWeight: 'bold', fontSize: 16 },
   link: { marginTop: 16, textAlign: 'center', color: '#ffffff', fontSize: 14 , textDecorationLine: 'underline',},
 });
