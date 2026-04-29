@@ -243,7 +243,10 @@ Responsável por:
 
 - Gerenciamento dos dados do aplicativo (fila, pedidos, etc.)
 
-*[PRINT Código dos Contexts]*
+<img width="748" height="584" alt="image" src="https://github.com/user-attachments/assets/72b73fb5-e08c-4d10-aad4-db0477b92c8f" />
+<img width="763" height="399" alt="image" src="https://github.com/user-attachments/assets/c5c47a33-9387-4087-97e8-972654387efd" />
+
+
 
 ---
 
@@ -323,18 +326,6 @@ O projeto foi reorganizado para melhor separação de responsabilidades:
 - Uso da **Context API** para gerenciamento de estado global
 - Separação de rotas autenticadas e não autenticadas
 - Validação de formulários diretamente nos componentes
-
----
-
-## Demonstração Visual
-
-Add as prints:
-
-- Tela de Login  
-- Tela de Cadastro  
-- Tela de Fila  
-- Tela de Cardápio  
-- Tela principal do aplicativo  
 
 
 
